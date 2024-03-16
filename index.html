@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModaMarket</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>ModaMarket</h1>
+            <div>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/carolina-leal-villafañe-53302a239/">LinkedIn</a></li>
+                    <li><a href="https://github.com/Carito2519">Github</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Categoria</a></li>
+                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#carrito">Carrito</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <h2 class="titulo-amarillo">Productos</h2>
+
+        <div class="contenedor-productos" data-productos></div>
+    </div>
+    <div class="contenedor">
+        <h2 class="titulo-amarillo" id="especial">Carrito de Compras</h2>
+        <div id="carrito" class="contenedor-productos" data-carrito></div>
+    </div>
+
+    <template id="template-producto">
+        <div class="tarjeta">
+            <h3 class="titulo"></h3>
+            <img class="imagen" src="" alt="Imagen de producto" />
+            <div class="contenedor-texto">
+                Precio: $<span class="precio"></span>
+            </div>
+            <button class="agregar-btn">Agregar al carrito</button>
+        </div>
+    </template>
+
+    <template id="template-carrito">
+        <div class="tarjeta">
+            <h3 class="titulo"></h3>
+            <div class="contenedor-imagen">
+                <img class="imagen" src="" alt="Imagen de producto" />
+            </div>
+            <div class="contenedor-texto">
+                Precio: $<span class="precio"></span>
+            </div>
+            <div class="contenedor-texto">
+                Cantidad: <span class="cantidad"></span>
+            </div>
+            <div class="contenedor-texto">
+                Total: <span class="total"></span>
+            </div>
+            <button class="eliminar-btn">Eliminar del carrito</button>
+        </div>
+    </template>
+</body>
+
+</html>

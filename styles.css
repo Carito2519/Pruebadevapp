@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+html {
+    font-family: "Madimi One", sans-serif;
+    display: block;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #4b7567;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #d6d1bd;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.contenedor {
+    padding: 1rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 2rem;
+}
+
+
+.tarjeta {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    gap: 0.5rem;
+}
+
+
+.tarjeta .precio {
+    font-weight: bold;
+}
+
+.contenedor-imagen {
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.tarjeta button {
+    background: none;
+    border: none;
+    background-color: #4b7567;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition: scale 100ms ease-in;
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    scale: 105%;
+}
